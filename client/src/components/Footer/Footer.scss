@@ -1,0 +1,60 @@
+.wrapper {
+    overflow: hidden;
+
+    .footer {
+        padding: 10rem;
+        background: linear-gradient(-315deg, #141414 0%, #35363d 109%);
+
+        .container {
+            overflow-x: clip;
+            position: relative;
+            max-width: 1280px;
+            margin: auto;
+            color: white;
+
+            .footer_content {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+
+                .footer_items {
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        margin-bottom: 1rem;
+                    }
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        font-size: 1rem;
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+
+                        li {
+                            margin-bottom: 0.5rem;
+                        }
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

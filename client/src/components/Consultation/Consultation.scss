@@ -1,0 +1,77 @@
+.wrapper {
+    overflow: hidden;
+  
+    .consultation {
+      background: linear-gradient(-315deg, #000000 0%, #422419 109%);
+      padding-top: 10rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 10rem;
+      color: white;
+      box-shadow: 0px 0px 10px 1px #422419;
+      animation: glow 2s infinite alternate; /* Add the glow animation */
+
+      // .consultation::after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 79.4%;
+      //   right: 36.4%;
+      //   width: 500px;
+      //   height: 500px;
+      //   background: linear-gradient(135deg, #3a1c7167, #d76d782c);
+      //   border-radius: 50%;
+      //   z-index: 1;
+      // }
+  
+      .container {
+        overflow-x: clip;
+        position: relative;
+        max-width: 1280px;
+        margin: auto;
+  
+        .consul_content {
+          text-align: center;
+  
+          .subheading {
+            font-size: 2rem;
+            color: #ff2278;
+          }
+  
+          .submianheading {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 1rem;
+          }
+  
+          .cons_buttons {
+            margin-top: 2rem;
+  
+            .subbutton {
+              padding: 15px 30px;
+              background-color: #ff2278;
+              color: white;
+              font-size: 1rem;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+  
+              &:hover {
+                background-color: #ff0063;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    @keyframes glow {
+      from {
+        box-shadow: 0px 0px 10px 1px #422419;
+      }
+      to {
+        box-shadow: 0px 0px 25px 5px #422419;
+      }
+    }
+  }
+  

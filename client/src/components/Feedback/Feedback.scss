@@ -1,0 +1,57 @@
+.wrapper {
+    overflow: hidden;
+
+    .feedback {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        .container {
+            max-width: 1280px;
+            margin: auto;
+
+            
+            .feedback_heading {
+                color: white;
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .feedback_item {
+                max-width: 400px;
+                border-radius: 6px;
+                width: 100%;
+                margin: 20px auto;  // Center the item horizontally
+                background: rgba(255, 255, 255, 0.1);
+                padding: 30px;  // Add padding for better appearance
+
+                p {
+                    color: white;
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+                .star-rating {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10px;
+                }
+
+                .star-rating svg {
+                    margin: 5px 2px 1px 2px;
+                }
+            }
+
+            .slick-dots {
+                bottom: -20px;
+            }
+
+            .slick-dots li button:before {
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+

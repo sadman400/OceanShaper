@@ -1,0 +1,64 @@
+.wrapper {
+  overflow: hidden;
+
+  .services {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+
+    .container {
+      overflow-x: clip;
+      position: relative;
+      max-width: 1280px;
+      margin: auto;
+
+      .boxes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding-left: 5px;
+        padding-right: 5px;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+        .box1 {
+          position: relative;
+          padding: 30px;
+          border-radius: 10px;
+          color: white;
+          box-shadow: 0px 0px 3px 4px #422419;
+          overflow: hidden;
+          transition: 0.5s; /* Adjust the transition duration as needed */
+
+          .icons {
+            font-size: 40px;
+            z-index: 2; /* Ensure the icons are above the pseudo-element */
+            position: relative; /* Set position for z-index to take effect */
+          }
+
+          h1,
+          p {
+            z-index: 2; /* Ensure text is above the pseudo-element */
+            position: relative; /* Set position for z-index to take effect */
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient( #4d2a1d, #0e0806);
+            opacity: 0;
+            transition: opacity 0.5s; /* Adjust the transition duration as needed */  
+            z-index: 1; /* Set a lower z-index for the pseudo-element */
+          }
+        }
+        
+        .box1:hover:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// Experience.scss
+
+.wrapper {
+    overflow: hidden;
+  
+    .experience {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    //   background: linear-gradient(-315deg, #000000 0%, #422419 109%);
+      color: white;
+  
+      .container {
+        overflow-x: clip;
+        position: relative;
+        max-width: 1280px;
+        margin: auto;
+  
+        .experience_counter {
+          display: flex;
+          justify-content: space-around;
+  
+          .counter_one {
+            text-align: center;
+  
+            .counter_icon {
+              font-size: 3rem;
+              color: #ff2278;
+            }
+  
+            h3 {
+              font-size: 1rem;
+              margin: 1rem 0;
+            }
+  
+            p {
+              font-size: 4rem;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+  

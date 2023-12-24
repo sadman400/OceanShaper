@@ -1,0 +1,112 @@
+.wrapper {
+    overflow: hidden;
+  
+    .portfolio {
+      padding-top: 10rem;
+      padding-bottom: 5rem;
+  
+      .container {
+        position: relative;
+        max-width: 1280px;
+        margin: auto;
+  
+        .portfolio_heading {
+          color: #fff;
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+  
+        .categories {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+  
+          button {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 0 10px;
+            padding: 5px 10px;
+            transition: color 0.3s ease-in-out;
+  
+            &:hover,
+            &.active {
+              color: #ff4081; /* Highlight color on hover or when active */
+            }
+          }
+        }
+  
+        .portfolio_contianer {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+          grid-gap: 20px;
+  
+          .portfolio_item {
+            .project_background {
+              width: 100%;
+              height: 300px;
+              border-radius: 20px;
+              overflow: hidden;
+              position: relative;
+              transition: transform 0.3s ease-in-out;
+              filter: blur(5px); /* Initial blur effect */
+  
+              &:hover {
+                transform: scale(1.05);
+                background-image: radial-gradient(
+                  circle farthest-corner at 10% 20%,
+                  rgba(100, 43, 115, 1) 0%,
+                  rgba(4, 0, 4, 1) 90%
+                );
+                filter: none;
+              }
+  
+              img {
+                width: 100%;
+                height: auto;
+                border-radius: 60px;
+                object-fit: cover;
+              }
+  
+              .project_info {
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 1rem;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.514);
+                border-radius: 0 0 20px 20px;
+                color: #fff;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+  
+                h3 {
+                  margin: 0;
+                  font-size: 1.5rem;
+                }
+  
+                p {
+                  margin: 0;
+                  font-size: 1rem;
+                  opacity: 0.8;
+                }
+              }
+  
+              &:hover .project_info {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

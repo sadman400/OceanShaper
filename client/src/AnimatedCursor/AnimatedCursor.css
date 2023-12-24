@@ -1,0 +1,34 @@
+/* AnimatedCursor.css */
+
+.animated-cursor {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3a1c7167, #d76d782c);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    will-change: transform; /* Notify the browser about the upcoming animation */
+    transition: background 2s ease-in-out; /* Increased duration and changed timing function for the background transition */
+    animation: pulse 1.5s infinite alternate; /* Increased duration for the pulse animation */
+    backdrop-filter: blur(3px); /* Smokey effect */
+    cursor: none; /* Hide the default cursor */
+    z-index: 1; /* Set a higher z-index to appear above other elements */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.animated-cursor:hover {
+    background: linear-gradient(135deg, #d76d788f, #3a1c717a);
+    mix-blend-mode: darken;
+    backdrop-filter: blur(10px); /* Increase blur on hover for a smoother transition */
+    cursor: grab; /* Change cursor shape on hover */
+}

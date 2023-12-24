@@ -1,0 +1,62 @@
+.wrapper {
+    overflow: hidden;
+
+    .navbar {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .container {
+            overflow-x: clip;
+            position: relative;
+            max-width: 1280px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                font-size: 1.5rem;
+                text-align: center;
+                color: #ff2278;
+
+                span{
+                    color: white;
+                }
+            }
+
+            .menu {
+                display: flex;
+                list-style-type: none;
+                gap: 2rem;
+                align-items: center;
+
+                .click_me {
+                    color: white;
+                    font-size: 1.1rem;
+                    background: #ff2278;
+                    outline: none;
+                    border: none;
+                    border-radius: 3rem;
+                    padding: 15px 25px 15px 25px;
+                    // transition: 1s ease;
+                    cursor: pointer;
+                }
+
+                .click_me:hover {
+                    color: white;
+                    font-size: 1.1rem;
+                    background: #ff2278;
+                    outline: none;
+                    border: none;
+                    border-radius: 3rem;
+                    padding: 15px 25px 15px 25px;
+                    box-shadow: 0px 0px 10px -3px #ff2278;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.wrapper {
+    overflow: hidden;
+  
+    .about {
+      padding-top: 10rem;
+      padding-bottom: 5rem;
+      color: #fff; /* Set text color */
+  
+      .container {
+        overflow-x: clip;
+        position: relative;
+        max-width: 1280px;
+        margin: auto;
+  
+        .about_box {
+          display: flex;
+          align-items: center;
+  
+          .about_img {
+            flex: 1;
+            position: relative;
+  
+            img {
+              width: 100%; /* Make the image responsive */
+              border-radius: 10px; /* Add a border-radius for a rounded appearance */
+              animation: floatAnimation 1s infinite alternate;
+              filter: blur(5px); /* Initial blur effect */
+              transition: filter 0.5s ease; /* Smooth transition effect */
+            }
+  
+            &:hover img {
+              filter: none; /* Remove blur on hover */
+            }
+          }
+  
+          .about_content {
+            flex: 1;
+            padding: 0 40px; /* Add padding to the content for better readability */
+  
+            .content_heading {
+              font-size: 2.5rem;
+              margin-bottom: 20px;
+            }
+  
+            .content_paragraph {
+              font-size: 1.2rem;
+              line-height: 1.6;
+            }
+  
+            .social_icons {
+              font-size: 40px;
+              color: white;
+              margin-top: 2rem;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  
+    @keyframes floatAnimation {
+      to {
+        transform: translateY(-20px);
+      }
+    }
+  }
+  
