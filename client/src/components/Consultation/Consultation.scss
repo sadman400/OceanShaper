@@ -2,26 +2,15 @@
     overflow: hidden;
   
     .consultation {
-      background: linear-gradient(-315deg, #000000 0%, #422419 109%);
+      // background: linear-gradient(-315deg, #000000 0%, #422419 109%);
+      background: linear-gradient(-315deg, #141414 0%, #35363d 109%);
       padding-top: 10rem;
       margin-top: 2rem;
       margin-bottom: 2rem;
       padding-bottom: 10rem;
       color: white;
-      box-shadow: 0px 0px 10px 1px #422419;
+      // box-shadow: 0px 0px 10px 1px #422419;
       animation: glow 2s infinite alternate; /* Add the glow animation */
-
-      // .consultation::after {
-      //   content: "";
-      //   position: absolute;
-      //   top: 79.4%;
-      //   right: 36.4%;
-      //   width: 500px;
-      //   height: 500px;
-      //   background: linear-gradient(135deg, #3a1c7167, #d76d782c);
-      //   border-radius: 50%;
-      //   z-index: 1;
-      // }
   
       .container {
         overflow-x: clip;
@@ -62,15 +51,6 @@
             }
           }
         }
-      }
-    }
-  
-    @keyframes glow {
-      from {
-        box-shadow: 0px 0px 10px 1px #422419;
-      }
-      to {
-        box-shadow: 0px 0px 25px 5px #422419;
       }
     }
   }

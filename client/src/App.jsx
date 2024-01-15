@@ -11,6 +11,7 @@ import Consultation from "./components/Consultation/Consultation";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
+import WorkProcess from "./components/WorkProcess/WorkProcess";
 
 const App = () => {
   
@@ -28,6 +29,7 @@ const App = () => {
         <Consultation />
         <Skills />
         <Experience />
+        <WorkProcess />
         <Footer />
       </div>
     </Layout>

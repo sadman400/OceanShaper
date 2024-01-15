@@ -30,11 +30,10 @@ const Experience = () => {
     startCounting(setTechPartners, 10, 50);
     startCounting(setTeamMembers, 15, 50);
 
-    // Cleanup intervals when the component is unmounted
     return () => {
       intervals.forEach((interval) => clearInterval(interval));
     };
-  }, []); // Empty dependency array ensures that the effect runs only once
+  }, []); 
 
   return (
     <div className='wrapper'>

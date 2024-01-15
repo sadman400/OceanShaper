@@ -1,0 +1,57 @@
+.wrapper {
+    overflow: hidden;
+  
+    .workprocess {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+      color: white;
+      background-color: #1a1a1a; // Add your desired background color
+  
+      .container {
+        position: relative;
+        max-width: 1280px;
+        margin: auto;
+  
+        .process_heading {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+  
+        .process_container {
+          display: flex;
+          justify-content: space-between;
+  
+          .process_box {
+            flex: 1;
+            padding: 2rem;
+            background-color: #333; // Add your desired background color
+            border-radius: 8px;
+            margin: 0 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease; // Add transition for smooth hover effect
+  
+            &:hover {
+              background-color: #555; // Add your desired hover background color
+              transform: scale(1.05); // Scale up on hover
+            }
+  
+            .icon {
+              font-size: 3rem;
+              margin-bottom: 1rem;
+            }
+  
+            h1 {
+              font-size: 1.5rem;
+              margin-bottom: 0.5rem;
+            }
+  
+            p {
+              font-size: 1rem;
+              color: #ccc; // Add your desired text color
+            }
+          }
+        }
+      }
+    }
+  }
+  

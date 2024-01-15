@@ -1,22 +1,34 @@
-import React from 'react';
-import './Navbar.scss';
+import React, { useRef } from 'react';
+import { FaTimes } from "react-icons/fa";
+import { FaHamburger } from "react-icons/fa";
+import './Navbar.css';
 
 const Navbar = () => {
+
+    const navRef = useRef();
+
+    const showNavbar = () => {
+        navRef.current.classList.toggle("responsive_nav")
+    }
+
     return (
         <div className='wrapper'>
             <div className="navbar">
                 <div className='container'>
-                    <div className='logo'>
-                        Ocean<span>Shaper</span>
-                    </div>
-                    <ul className='menu'>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <button className='click_me'>click me</button>
+                    <h3>Logo</h3>
+                    <ul className='menu' ref={navRef}>
+                        <a href="#">Home</a>
+                        <a href="#">Services</a>
+                        <a href="#">About</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Testimonials</a>
+                        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+                            <FaTimes />
+                        </button>
                     </ul>
+                    <button className='nav-btn' onClick={showNavbar} >
+                        <FaHamburger />
+                    </button>
 
                 </div>
             </div>
@@ -24,4 +36,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
